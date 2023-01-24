@@ -1,0 +1,220 @@
+/********* PAGE PRINCIPALE **********/
+
+
+/*--------BODY */
+
+body {
+    width: 100%;
+    background: linear-gradient(00.25turn, #9198e5, #443a3a, #632424);
+    font-family: 'Merienda', cursive;
+}
+
+
+/*-------HEADER */
+
+header {
+    padding: 1%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    color: wheat;
+}
+
+h2>.exp {
+    color: darkgray;
+}
+
+aside {
+    padding: 30px;
+    border-right: 1px solid rgb(14, 12, 13);
+    border-top: 1px solid rgb(14, 12, 13);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 10px 10px 10px gray;
+    color: white;
+}
+
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+li {
+    list-style-type: none;
+    /* justify-content: baseline; */
+}
+
+
+/*---ASIDE----*/
+
+aside li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+form>div>input {
+    transition-duration: 1s;
+}
+
+form>div>input:hover {
+    background-color: rgb(17, 84, 110);
+    color: white;
+}
+
+a {
+    color: rgba(192, 31, 71, 0.856);
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+
+/* header */
+
+
+/*--- DECLARATIONS PARTICULIERES -- */
+
+#barreh {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+
+#nav {
+    flex-direction: column;
+}
+
+#img>img {
+    width: 15%;
+}
+
+
+/*--- ASIDE  */
+
+#aside {
+    display: flex;
+}
+
+#hero {
+    color: rgb(224, 169, 169) !important;
+}
+
+#xp {
+    color: rgb(218, 173, 173) !important;
+    margin-left: 5px;
+}
+
+
+/* --- MAIN */
+
+.me {
+    width: 50%;
+    display: inline-block;
+}
+
+#propos {
+    color: wheat !important;
+}
+
+#bouton {
+    width: auto;
+}
+
+#contact {
+    width: 90%;
+    display: grid;
+    padding: 1px;
+}
+
+#credits {
+    padding: 1%;
+}
+
+#home {
+    position: fixed;
+    bottom: 0.15%;
+    width: 5%;
+}
+
+#message {
+    margin: 36px 0 36px 0;
+}
+
+#message>div {
+    margin-bottom: 50px;
+}
+
+#pied {
+    font-size: 3em;
+    color: brown;
+}
+
+dl {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* les médias */
+
+
+/* TABLETTE  */
+
+@media all and (min-width:811px) and (max-width: 1080px) {
+    header {
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
+    header>ul.nav>li {
+        flex-direction: column;
+        text-align: center;
+    }
+    aside {
+        width: 100%;
+    }
+}
+
+
+/* SMARTPHONE */
+
+@media all and (min-width:374px) and (max-width: 668px) {
+    main {
+        background-color: #303030;
+    }
+    div#aside {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    aside>#hero {
+        color: aqua;
+    }
+    #message {
+        flex-direction: column;
+    }
+    footer {
+        color: wheat
+    }
+}
+
+
+/*------RESERVOIR DE POLICE */
+
+
+/* font-family: 'Beau Rivage',cursive;
+font-family: 'Cormorant Garamond',serif;
+font-family: 'Merienda', cursive;
